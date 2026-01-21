@@ -9,10 +9,23 @@
 }
 
 body {
-  background: linear-gradient(120deg, #667eea, #764ba2););
+  background: linear-gradient(
+    -45deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #00f7ff
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
   color: white;
 }
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 /* NAVBAR */
 nav {
   display: flex;
